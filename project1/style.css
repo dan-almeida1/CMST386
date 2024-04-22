@@ -6,6 +6,11 @@ body {
     justify-content: center;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
 header {
     background-color: #634B66;
     padding: 6px;
