@@ -9,6 +9,11 @@ body {
 ul {
     display: flex;
     flex-direction: row;
+    list-style-type: none;
+}
+
+li {
+    padding: 6px;
 }
 
 header {
