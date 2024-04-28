@@ -33,6 +33,11 @@ footer {
     padding: 18px;
 }
 
+#mainarticle {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 article {
     background-color: #18020C;
     color: #E5FFDE;
