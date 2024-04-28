@@ -22,6 +22,12 @@ main {
     margin: 6px;
 }
 
+.gallerybox {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 article {
     background-color: #18020C;
     color: #E5FFDE;
