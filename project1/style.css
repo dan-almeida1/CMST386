@@ -1,6 +1,11 @@
 body {
-    background-color: #9590A8;
+    background-color: #59D5E0;
     font-family: sans-serif;
+    color: #F4538A;
+}
+
+nav {
+    background-color: #F4538A;
 }
 
 ul {
@@ -12,12 +17,12 @@ li {
 }
 
 header {
-    background-color: #634B66;
+    background-color: #F5DD61;
     padding: 6px;
     margin: 6px;
 }
 main {
-    background-color: #E5FFDE;
+    background-color: #F5DD61;
     min-height: 300px;
     padding: 6px;
     margin: 6px;
@@ -32,6 +37,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     padding: 18px;
+    background-color: #FAA300;
 }
 
 #mainarticle {
