@@ -36,7 +36,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 footer {
@@ -84,4 +84,9 @@ a {
     text-decoration: none;
     color: #FAA300;
     font-weight: bold;
+}
+
+#gallerybox {
+    display: flex;
+    flex-direction: row;
 }
