@@ -11,6 +11,9 @@ nav {
     margin: 6px;
     padding: 6px;
     font-size: large;
+}
+
+nav ul {
     list-style-type: none;
     font-weight: bold;
 }
