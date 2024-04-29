@@ -1,7 +1,7 @@
 body {
     background-color: #C0D6E8;
     font-family: sans-serif;
-    color: #E9C874;
+    color: #A34343;
     padding: 6px;
 }
 
@@ -44,7 +44,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     padding: 18px;
-    background-color: #E9C874;
+    background-color: #A34343;
     margin: 6px;
     padding: 6px;
 }
