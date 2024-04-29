@@ -18,7 +18,7 @@ ul {
 
 li {
     padding: 6px;
-    font-weight: 500px;
+    font-weight: bold;
 }
 
 header {
@@ -81,5 +81,5 @@ div.caption {
 a {
     text-decoration: none;
     color: #FAA300;
-    font-weight: 500;
+    font-weight: bold;
 }
