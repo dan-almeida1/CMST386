@@ -11,12 +11,20 @@
 	  <header>
       <h1>CMST386 - Project 1 Gallery</h1>
     </header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="project1.html">Project 1</a></li>
-      </ul>
-    </nav>
+    <div class = "navbar">
+      <a href="../index.html">Home</a>
+      <a href="project1.html">Project 1</a>
+      <div class="dropdown">
+        <button class="dropbtn">Projects
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../project2/project2.html">Project 2</a>
+          <a href="../project3/project3.html">Project 3</a>
+          <a href="../project4/project4.html">Project 4</a>
+        </div>
+      </div>
+    </div class = "navbar">
     <main>
       <h2>Photogallery Example</h2>
       <p>Here are some pictures from my garden! Growing zone 6</p>
@@ -25,25 +33,25 @@
           <a target="_blank" href="photos/cacti.jpg">
             <img src="photos/cacti.jpg" alt="cacti" width="600" height="400">
           </a>
-          <div class="caption"></div>
+          <div class="caption">A Cactus</div>
         </div>
         <div class="gallery">
           <a target="_blank" href="photos/gardening.jpg">
             <img src="photos/gardening.jpg" alt="gardening" width="600" height="400">
           </a>
-          <div class="caption"></div>
+          <div class="caption">Weeding</div>
         </div>
         <div class="gallery">
           <a target="_blank" href="photos/hands.jpg">
             <img src="photos/hands.jpg" alt="hands gardening" width="600" height="400">
           </a>
-          <div class="caption"></div>
+          <div class="caption">Planting</div>
         </div>
         <div class="gallery">
           <a target="_blank" href="photos/scissors.jpg">
             <img src="photos/scissors.jpg" alt="trimming hedges" width="600" height="400">
           </a>
-          <div class="caption"></div>
+          <div class="caption">Pruning</div>
         </div>
       </div>
     </main>
