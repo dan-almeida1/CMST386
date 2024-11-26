@@ -5,7 +5,7 @@ function displayRecipes(recipes) {
     recipeListEl.innerHTML = "";
     recipes.forEach((recipe) => {
         const recipeItemEl = document.createElement("li");
-        recipeItemEL.classList.add("recipe-item");
+        recipeItemEl.classList.add("recipe-item");
 
         recipeImageEl = document.createElement("img");
         recipeImageEl.src = recipe.image;
