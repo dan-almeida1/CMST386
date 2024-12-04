@@ -4,8 +4,13 @@
 //base
 @use 'base';
 
+//colors
+@use 'colors';
+
 //component 
-@use 'navbar';
+@use 'components/navbar';
+@use 'components/card';
+
 
 @media screen and (max-width: 768px) {
     .container {
