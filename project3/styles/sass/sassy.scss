@@ -1,49 +1,11 @@
-//variables
-$yellow: #E9C874;
-$red: #A34343;
+//variables and functions
+@use 'variables' as v;
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+//base
+@use 'base';
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    margin: 0;
-    font-size: 36px;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 20px;
-}
-
-ol{
-    display: flex;
-    list-style: none;
-}
-
-ul{
-    background-color: $yellow;
-    padding: 5px;
-}
-
-li {
-    background-color: $yellow;
-    max-width: 350px;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5%;
-  }
-  
+//component 
+@use 'navbar';
 
 @media screen and (max-width: 768px) {
     .container {
@@ -56,74 +18,3 @@ li {
     }
 }
 
-/* Navbar container */
-.navbar {
-    overflow: hidden;
-    background-color: $yellow;
-    font-family: Arial;
-    margin: 0;
-
-    a {
-    float: left;
-    font-size: 16px;
-    color: $red;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    }
-  }
-  
-  
-  /* The dropdown container */
-  .dropdown {
-    float: left;
-    overflow: hidden;
-
-    .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: $red;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-    }
-  }
-  
- 
-  
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #C0D6E8;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: $yellow;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-
-    a {
-    float: none;
-    color: $red;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    }
-
-    a:hover {
-        background-color: #C0D6E8; 
-    }
-  }
-  
- 
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  } 
