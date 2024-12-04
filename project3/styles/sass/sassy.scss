@@ -1,6 +1,6 @@
 //variables
-
 $yellow: #E9C874;
+$red: #A34343;
 
 body {
     margin: 0;
@@ -66,7 +66,7 @@ li {
     a {
     float: left;
     font-size: 16px;
-    color: #A34343;
+    color: $red;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -83,7 +83,7 @@ li {
     font-size: 16px;
     border: none;
     outline: none;
-    color: #A34343;
+    color: $red;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
@@ -95,7 +95,7 @@ li {
   
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #C0D6E7;
+    background-color: #C0D6E8;
   }
   
   /* Dropdown content (hidden by default) */
@@ -109,7 +109,7 @@ li {
 
     a {
     float: none;
-    color: #A34343;
+    color: $red;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
