@@ -1,8 +1,12 @@
 //variables and functions
+@use "sass:math";
+@use 'functions';
 @use 'variables' as v;
 
 //base
 @use 'base';
+@use 'breakpoints';
+@use 'grid';
 
 //colors
 @use 'colors';
@@ -13,16 +17,7 @@
 @use 'components/button';
 
 //utilities
+@use 'utilities';
 
 
-@media screen and (max-width: 768px) {
-    .container {
-        max-width: 90%;
-    }
-     
-    ol {
-        flex-direction: column;
-        max-width: 50%;
-    }
-}
 
