@@ -1,6 +1,7 @@
 @use "sass:map";
+
 $breakpoints: (
-    "xx": 0,
+    "xs": 0,
     "sm": 480px,
     "md": 720px,
     "lg": 960px,
@@ -44,22 +45,22 @@ $breakpoints: (
 }
 
 .responsive-test {
-    @include xs {
-      color: red;
-    }
-    @include sm {
-      color: blue;
-    }
-    @include md {
-      color: green;
-    }
-    @include lg {
-      color: purple;
-    }
-    @include xl {
-      color: orange;
-    }
-    @include breakpoint(1400px) {
-      color: pink;
-    }
+  @include xs {
+    color: red;
   }
+  @include sm {
+    color: blue;
+  }
+  @include md {
+    color: green;
+  }
+  @include lg {
+    color: purple;
+  }
+  @include xl {
+    color: orange;
+  }
+  @include breakpoint(1400px) {
+    color: pink;
+  }
+}

@@ -1,51 +1,49 @@
-@use "sass:color";
-@use "variables" as v;
+@use 'variables' as v;
 
-@each $key, $val in v.$colors{
-    .text-#{$key} {
-        color: $val;
-    }
+// color palette
+@each $key, $val in v.$colors {
     .bg-#{$key} {
-        background-color: $val;
+            background-color: $val;
     }
-
     .text-hover-#{$key} {
-        &:hover{
+            &:hover {
+                color: $val;
+            }
+    }
+    .text-#{$key} {
             color: $val;
-        }
     }
 
-    @if($val != black and $val != white){
+    @if($val != black and $val != white) {
         //light variations
         @for $i from 1 through 9 {
-            .text-#{$key}-light-#{$i} {
-                color: color.mix(white, $val, $i * 10%)
-            }
+            $lightness: $i * 10%;
             .bg-#{$key}-light-#{$i} {
-                background-color: color.mix(white, $val, $i * 10%)
-            }
-
-            .text-hover-#{$key}-#{i} {
-                &:hover{
-                    color: color.mix(black, $val, $i * 10%);
+                background-color: mix(white, $val, $lightness);
+                }
+            .text-#{$key}-light-#{$i} {
+                color: mix(white, $val, $lightness);
+                }
+            .text-hover-#{$key}-light-#{$i} {
+                &:hover {
+                    color: mix(white, $val, $lightness);
                 }
             }
         }
-
-        //dark variations
         @for $i from 1 through 9 {
-            .text-#{$key}-dark-#{$i} {
-                color: color.mix(white, $val, $i * 10%)
-            }
+            $darkness: $i * 10%;
             .bg-#{$key}-dark-#{$i} {
-                background-color: color.mix(black, $val, $i * 10%)
-            }
-            .text-hover-#{$key}-dark-#{i} {
-                &:hover{
-                    color: color.mix(black, $val, $i * 10%);
+                    background-color: mix(black, $val, $darkness);
                 }
+            .text-#{$key}-dark-#{$i} {
+                    color: mix(black, $val, $darkness);
+                }
+            .text-hover-#{$key}-dark-#{$i} {
+                &:hover {
+                    color: mix(black, $val, $darkness);
+                }           
             }
         }
     }
-}
 
+}
