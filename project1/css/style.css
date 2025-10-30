@@ -5,43 +5,72 @@ body {
     padding: 6px;
 }
 
-
 header {
     background-color: #A34343;
     padding: 18px;
     margin: 6px;
     color:#E9C874
 }
+
+#title {
+    font-weight: bold;
+    font-size: 60px;
+}
+
 main {
     background-color: #FBF8DD;
     min-height: 300px;
     padding: 6px;
     margin: 6px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     padding: 18px;
     background-color: #E9C874;
     margin: 6px;
     padding: 6px;
 }
 
-#mainarticle {
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 article {
     padding: 6px;
     margin: 6px;
+    max-width: 500px;
 }
+
+article ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.heading {
+    text-decoration: underline;
+} 
+
+#searchengine {
+
+
+}
+
+#metatags {
+
+
+}
+
+#contentlinks {
+
+}
+
+#hierarchy {
+
+}
+
+/* Gallery */
 
 div.gallery {
     margin: 5px;
