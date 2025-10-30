@@ -53,21 +53,29 @@ article ul {
 } 
 
 #searchengine {
-
+    background-color: #fffef9;
+    padding: 6px;
+    margin: 6px;
 
 }
 
 #metatags {
-
-
+    background-color: antiquewhite;
+    padding: 16px;
+    margin: 6px;
+    max-width: 450px;
 }
 
 #contentlinks {
-
+    background-color: #fffef9;
+    padding: 6px;
+    margin: 6px;
 }
 
 #hierarchy {
-
+    background-color: antiquewhite;
+    padding: 6px;
+    margin: 6px;
 }
 
 /* Gallery */
