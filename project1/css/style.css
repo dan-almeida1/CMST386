@@ -79,19 +79,24 @@ article ul {
 }
 
 /* Gallery */
+#gallerymain {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
-div.gallery {
+figure {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
     width: 180px;
 }
 
-div.gallery:hover {
+figure:hover {
     border: 1px solid #777;
 }
 
-div.gallery img {
+figure img {
     width: 100%;
     height: auto;
 }

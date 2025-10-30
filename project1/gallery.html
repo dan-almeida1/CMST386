@@ -15,7 +15,15 @@
     </header>
     <div class = "navbar">
       <a href="../index.html">Home</a>
-      <a href="project1.html">Project 1</a>
+      <div class="dropdown">
+        <button class="dropbtn">Project 1
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../project1/project1.html">Project 1</a>
+          <a href="../project1/gallery.html">Gallery</a>
+        </div>
+      </div>
       <div class="dropdown">
         <button class="dropbtn">Projects
           <i class="fa fa-caret-down"></i>
@@ -26,35 +34,35 @@
           <a href="../project4/project4.html">Project 4</a>
         </div>
       </div>
-    </div class = "navbar">
-    <main>
+    </div>
+    <main id="gallerymain">
       <h2>Photogallery Example</h2>
       <p>Here are some pictures from my garden! Growing zone 6</p>
-      <div id="gallerybox id">
-        <div class="gallery">
+      <div id="gallerybox">
+        <figure class="gallery">
           <a target="_blank" href="images/cacti.jpg">
             <img src="images/cacti.jpg" alt="cacti" width="600" height="400">
           </a>
           <figcaption>A Cactus</figcaption>
-        </div>
-        <div class="gallery">
+        </figure>
+        <figure class="gallery">
           <a target="_blank" href="images/gardening.jpg">
             <img src="images/gardening.jpg" alt="gardening" width="600" height="400">
           </a>
           <figcaption>Weeding</figcaption>
-        </div>
-        <div class="gallery">
+        </figure>
+        <figure class="gallery">
           <a target="_blank" href="images/hands.jpg">
             <img src="images/hands.jpg" alt="hands gardening" width="600" height="400">
           </a>
           <figcaption>Planting</figcaption>
-        </div>
-        <div class="gallery">
+        </figure>
+        <figure class="gallery">
           <a target="_blank" href="images/scissors.jpg">
             <img src="images/scissors.jpg" alt="trimming hedges" width="600" height="400">
           </a>
           <figcaption>Pruning</figcaption>
-        </div>
+        </figure>
       </div>
     </main>
     <footer>
