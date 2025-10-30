@@ -59,7 +59,7 @@ div.gallery img {
     height: auto;
 }
 
-div.caption {
+figcaption {
     padding: 15px;
     text-align: center;
 }
