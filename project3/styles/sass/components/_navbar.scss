@@ -1,3 +1,5 @@
+@use "../variables" as v;
+
 %flex-layout {
     width: 100%;
     display: flex;
@@ -8,19 +10,66 @@
 
 .navbar {
     @extend %flex-layout;
-    padding: $base-padding $base-padding * 2;
-    box-shadow: $base-box-shadow;
+    padding: v.$base-padding v.$base-padding * 2;
+    box-shadow: v.$base-box-shadow;
+    justify-content: flex-end;
 
     .site-title {
-        font-size: $font-size-lg;
+        font-size: v.$font-size-lg;
     }
 
     .container {
         @extend %flex-layout;
+        ;
     }
+
+    a {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    float: left;
+    overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit; /* Important for vertical align on mobile phones */
+      margin: 0; /* Important for vertical align on mobile phones */
+    }
+  /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #E9C874;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+  /* Links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+      /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  } 
 }
 
-@each $key, $val in $colors {
+@each $key, $val in v.$colors {
   .navbar-#{$key} {
     @extend .navbar;
     background-color: $val;

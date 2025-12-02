@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use 'variables' as v;
 
 // color palette
@@ -19,28 +20,28 @@
         @for $i from 1 through 9 {
             $lightness: $i * 10%;
             .bg-#{$key}-light-#{$i} {
-                background-color: mix(white, $val, $lightness);
+                background-color: color.mix(white, $val, $lightness);
                 }
             .text-#{$key}-light-#{$i} {
-                color: mix(white, $val, $lightness);
+                color: color.mix(white, $val, $lightness);
                 }
             .text-hover-#{$key}-light-#{$i} {
                 &:hover {
-                    color: mix(white, $val, $lightness);
+                    color: color.mix(white, $val, $lightness);
                 }
             }
         }
         @for $i from 1 through 9 {
             $darkness: $i * 10%;
             .bg-#{$key}-dark-#{$i} {
-                    background-color: mix(black, $val, $darkness);
+                    background-color: color.mix(black, $val, $darkness);
                 }
             .text-#{$key}-dark-#{$i} {
-                    color: mix(black, $val, $darkness);
+                    color: color.mix(black, $val, $darkness);
                 }
             .text-hover-#{$key}-dark-#{$i} {
                 &:hover {
-                    color: mix(black, $val, $darkness);
+                    color: color.mix(black, $val, $darkness);
                 }           
             }
         }
